@@ -33,10 +33,10 @@ function CountDownTimer() {
       const formatNumber = (num: number) => num.toString().padStart(2, "0");
     
       return (
-        <section className="my-5 mt-10">
+        <section className="my-0 mr-4 md:mr-0 md:my-5 mt-10">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="inline-flex items-center justify-center p-8">
-              <div className="flex gap-2 text-5xl font-digital text-muted-foreground">
+              <div className="flex gap-2 text-3xl md:text-5xl font-digital text-muted-foreground">
                 <div className="text-center relative">
                   {formatNumber(timeLeft.days)}
                   <div className="absolute bottom-[-10px] right-[-15px] text-sm md:text-base text-muted-foreground uppercase tracking-wide">
