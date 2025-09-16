@@ -3,7 +3,7 @@ import Button from './button';
 
 function Tickets() {
   return (
-    <section className='container mx-auto flex flex-col justify-center items-center py-[10rem] pb-[8rem]'>
+    <section className='container mx-auto flex flex-col justify-center items-center py-[5rem] md:py-[10rem] pb-[8rem]'>
         <div className="w-full max-w-2xl flex justify-center items-center flex-col space-y-4">
             <div className="flex justify-center items-center">
                 <Button label='Get Your Ticket' className='bg-white py-4 text-lg' />

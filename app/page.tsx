@@ -26,14 +26,14 @@ export default function Home() {
       <div className="relative bg-foreground">
         <div className="absolute top-1 left-1">
           <img 
-            className="h-[100px] md:h-[200px] lg:h-[237px]" 
+            className="h-[70px] md:h-[200px] lg:h-[237px]" 
             src="/gdg-assets/asteris.svg" 
             alt="GDG Asteris SVG" 
           />
         </div>
         <div className="absolute top-1 right-1">
           <img 
-            className="h-[100px] md:h-[200px] lg:h-[237px]" 
+            className="h-[70px] md:h-[200px] lg:h-[237px]" 
             src="/gdg-assets/asteris.svg" 
             alt="GDG Asteris SVG" 
           />
