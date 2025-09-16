@@ -2,6 +2,7 @@ import AboutDevfestBamenda from "@/components/about-devfest-bamenda";
 import Header from "@/components/header";
 import Landing from "@/components/landing";
 import Schedule from "@/components/schedule";
+import Speakers from "@/components/speakers";
 import Tickets from "@/components/ticket";
 import CountDownTimer from "@/components/time-counter";
 
@@ -46,6 +47,9 @@ export default function Home() {
            />
         </div>
         <Tickets />
+      </div>
+      <div className="bg-white py-5">
+        <Speakers />
       </div>
     </div>
   );
