@@ -1,6 +1,7 @@
 import AboutDevfestBamenda from "@/components/about-devfest-bamenda";
 import Header from "@/components/header";
 import Landing from "@/components/landing";
+import Schedule from "@/components/schedule";
 import CountDownTimer from "@/components/time-counter";
 
 
@@ -17,6 +18,9 @@ export default function Home() {
       </div>
       <div className="bg-foreground py-10">
         <AboutDevfestBamenda />
+      </div>
+      <div className="bg-white">
+        <Schedule />
       </div>
     </div>
   );
