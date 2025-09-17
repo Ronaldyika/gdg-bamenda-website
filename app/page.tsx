@@ -3,6 +3,7 @@ import Header from "@/components/header";
 import Landing from "@/components/landing";
 import Schedule from "@/components/schedule";
 import Speakers from "@/components/speakers";
+import Sponsors from "@/components/sponsors";
 import Tickets from "@/components/ticket";
 import CountDownTimer from "@/components/time-counter";
 
@@ -50,6 +51,23 @@ export default function Home() {
       </div>
       <div className="bg-white py-5">
         <Speakers />
+      </div>
+      <div className="relative bg-foreground">
+        <div className="absolute top-1 left-1">
+          <img 
+            className="h-[70px] md:h-[200px] lg:h-[237px]" 
+            src="/gdg-assets/asteris-blue.svg" 
+            alt="GDG Asteris SVG" 
+          />
+        </div>
+        <div className="absolute top-1 right-1">
+          <img 
+            className="h-[70px] md:h-[200px] lg:h-[237px]" 
+            src="/gdg-assets/asteris-blue.svg" 
+            alt="GDG Asteris SVG" 
+          />
+        </div>
+        <Sponsors />
       </div>
     </div>
   );
