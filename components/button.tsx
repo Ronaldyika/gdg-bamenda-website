@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface IButton {
-    label: string;
+    label?: string;
     icon?: string;
     className?: string;
     onClick?: () => void;
@@ -13,7 +13,7 @@ export default function Button({label, icon, className, onClick}: IButton) {
       onClick={onClick} 
       className={"flex items-center justify-center border border-black rounded-full py-3 px-6 gap-2 [word-spacing:8px]" + " " + className}>
         {icon ? <img alt="logo" loading="lazy" decoding="async" className='object-contain' style={{color: 'transparent'}} src={icon}/> : ""}
-        <span className='whitespace-nowrap'>{label}</span>
+        {label ? <span className='whitespace-nowrap'>{label}</span> : ''}   
     </div>
   )
 }

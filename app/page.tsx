@@ -1,6 +1,7 @@
 import AboutDevfestBamenda from "@/components/about-devfest-bamenda";
 import Header from "@/components/header";
 import Landing from "@/components/landing";
+import Location from "@/components/location";
 import Organisers from "@/components/organisers";
 import Schedule from "@/components/schedule";
 import Speakers from "@/components/speakers";
@@ -79,6 +80,9 @@ export default function Home() {
         <div className="relative z-20 h-full flex items-center justify-center">
           <Throwback />
         </div>
+      </div>
+      <div className="bg-white py-5">
+        <Location />
       </div>
     </div>
   );
