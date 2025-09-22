@@ -2,10 +2,11 @@
 import React from "react";
 import Button from "./button";
 import Link from "next/link";
+import { items } from "@/data/data";
 
 function Header() {
     const [toggle, setToggle] = React.useState(false);
-    const items = ["Home", "About", "Speakers", "Schedule", "Sponsors", "Team", "FAQs"]
+    
     return (
         <header className="max-w-7xl mx-auto px-4 md:px-8 py-6 md:py-10 flex w-full items-center justify-between">
             <Link href={"/"}>

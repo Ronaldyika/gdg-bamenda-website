@@ -1,4 +1,5 @@
 import AboutDevfestBamenda from "@/components/about-devfest-bamenda";
+import AboutGDGBamenda from "@/components/about-gdg-bamenda";
 import Header from "@/components/header";
 import Landing from "@/components/landing";
 import Location from "@/components/location";
@@ -83,6 +84,9 @@ export default function Home() {
       </div>
       <div className="bg-white py-5">
         <Location />
+      </div>
+      <div className="bg-[#1E1E1E] py-5">
+        <AboutGDGBamenda />
       </div>
     </div>
   );
