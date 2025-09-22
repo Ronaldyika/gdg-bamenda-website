@@ -1,16 +1,17 @@
-import React from 'react'
-import Image from 'next/image';
-import { socials } from '@/data/data';
-
-
+import { devfestHastags } from "@/data/data";
 
 function Footer() {
+    const year = new Date().getFullYear();
     return (
-        <footer className="flex flex-col items-center justify-center gap-10">
-            <div className="flex gap-5 overflow-y-auto">
-
+        <footer className="flex flex-col w-full items-center justify-center gap-10">
+            <div className="flex gap-6 overflow-y-auto">
+                {devfestHastags.map((hashtag, index) => {
+                    return <span className="text-[20px] text-white" key={index}>{hashtag}</span>
+                })}
             </div>
-            <div className=""></div>
+            <div className="flex text-white justify-center items-center">
+                {year} © gdgbamenda 
+            </div>
         </footer>
     )
 }
