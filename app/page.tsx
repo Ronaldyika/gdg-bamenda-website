@@ -11,7 +11,7 @@ import Sponsors from "@/components/sponsors";
 import Throwback from "@/components/throwback";
 import Tickets from "@/components/ticket";
 import CountDownTimer from "@/components/time-counter";
-import { speakers } from "@/data/data";
+import { organizers, speakers } from "@/data/data";
 
 
 export default function Home() {
@@ -76,7 +76,7 @@ export default function Home() {
         <Sponsors />
       </div>
       <div className="bg-white py-5">
-        <Organisers />
+        <Organisers organizers={organizers} />
       </div>
       <div className="relative h-[400px] bg-[url('/images/throwback.png')] bg-cover bg-center">
         <div className="absolute top-0 left-0 h-full w-full bg-black/85 z-10"></div>

@@ -1,4 +1,3 @@
-// Navigation hedaer data (update data with better structure using either class or interface)
 export const items = [
   "Home",
   "Ticket",
@@ -13,6 +12,33 @@ export interface Social {
   name: string;
   link: string;
   icon: string;
+}
+
+export type Speaker = {
+  name: string;
+  role: string;
+  image: string;
+  tag: string;
+  colour: string;
+};
+
+type ColourOption =
+  | "accent"
+  | "chart-1"
+  | "chart-2"
+  | "chart-3"
+  | "chart-4"
+  | "chart-5";
+
+export interface Organizer {
+  name: string;
+  role: string;
+  image: string;
+  socials: {
+    x: string;
+    linkedin: string;
+  };
+  colour: ColourOption;
 }
 
 export const socials: Social[] = [
@@ -47,14 +73,6 @@ export const devfestHastags = [
   "#DEVFESTBamenda",
 ];
 
-export type Speaker = {
-  name: string;
-  role: string;
-  image: string;
-  tag: string;
-  colour: string;
-};
-
 export const speakers: Speaker[] = [
   {
     name: "Lynnette Lynnette",
@@ -83,5 +101,48 @@ export const speakers: Speaker[] = [
     image: "/gdg-assets/lynette.jpg",
     tag: "Conference",
     colour: "chart-2",
+  },
+];
+
+export const organizers: Organizer[] = [
+  {
+    name: "Ndifon Ndifon Ndifon",
+    role: "GDG Co-Organizer",
+    image: "/gdg-assets/organizer_1.jpg",
+    socials: {
+      x: "https://x.com/ndifon",
+      linkedin: "https://linkedin.com/in/ndifon",
+    },
+    colour: "accent",
+  },
+  {
+    name: "Ndifon Ndifon Ndifon",
+    role: "Volunteer",
+    image: "/gdg-assets/organizer_1.jpg",
+    socials: {
+      x: "https://x.com/ndifon",
+      linkedin: "https://linkedin.com/in/ndifon",
+    },
+    colour: "chart-2",
+  },
+  {
+    name: "Ndifon Ndifon Ndifon",
+    role: "GDG Co-Organizer",
+    image: "/gdg-assets/organizer_1.jpg",
+    socials: {
+      x: "https://x.com/ndifon",
+      linkedin: "https://linkedin.com/in/ndifon",
+    },
+    colour: "chart-1",
+  },
+  {
+    name: "Ndifon Ndifon Ndifon",
+    role: "GDG Co-Organizer",
+    image: "/gdg-assets/organizer_1.jpg",
+    socials: {
+      x: "https://x.com/ndifon",
+      linkedin: "https://linkedin.com/in/ndifon",
+    },
+    colour: "chart-4",
   },
 ];
