@@ -3,7 +3,7 @@ import Button from './button'
 
 function Location() {
   return (
-    <section className='container flex flex-col gap-5 max-w-7xl mx-auto px-5 md:px-0 pt-10 md:pt-20 z-20'>
+    <section className='container flex flex-col gap-5 max-w-7xl mx-auto px-5 md:px-0 pt-10 md:pt-20 z-50'>
         <div className="flex flex-col items-center justify-center space-y-5">
             <div className="flex justify-center items-center">
                 <Button label='Venue' className='bg-white py-4 text-lg' />
@@ -12,7 +12,7 @@ function Location() {
                 <h1 className='text-3xl md:text-4xl font-medium text-center'><strong>See you at Epic Events Center Bamenda</strong></h1>
             </div>
         </div>
-        <div className="flex flex-col gap-2 md:gap-4 rounded-3xl shadow py-5">
+        <div className="flex flex-col gap-2 bg-white md:gap-4 rounded-3xl shadow py-5">
             <div className="flex items-center justify-center p-4 mx-auto">
                 <svg xmlns="http://www.w3.org/2000/svg" className='hidden md:block' width="1160" height="42" viewBox="0 0 1160 42" fill="none">
                     <rect width="1160" height="41.5253" fill="url(#pattern0_58_694)"/>
@@ -33,7 +33,7 @@ function Location() {
                     </defs>
                 </svg>
             </div>
-            <div className="h-[740px] relative mx-0 md:mx-5 border-[1px] rounded-none md:rounded-2xl">
+            <div className="h-[740px] bg-white relative mx-0 md:mx-5 border-[1px] rounded-none md:rounded-2xl">
                 <div className="absolute top-2 left-2 z-40">
                     <div className="hidden md:block">
                         <Button className='border-none bg-accent' label="Get Directions" icon='/icons/arrow-right.svg' />
