@@ -1,5 +1,6 @@
 import AboutDevfestBamenda from "@/components/about-devfest-bamenda";
 import AboutGDGBamenda from "@/components/about-gdg-bamenda";
+import DevFestBgPattern from "@/components/bg-pattern";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Landing from "@/components/landing";
@@ -18,7 +19,21 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden bg-white">
        <Header />
-      <div className="flex justify-center items-center flex-col my-15 w-full">
+      <div className="flex h-full relative justify-center items-center flex-col my-15 w-full">
+        <div
+          className="absolute top-4 right-20 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem] rounded-full z-10 bg-[rgba(66,133,244,1)]
+                      bg-[radial-gradient(circle,_rgba(66,133,244,1)_0%,_rgba(66,133,244,0.6)_0%,_transparent_90%)] blur-3xl"
+        ></div>
+        <div
+          className="absolute left-20 top-1/2 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem] 
+                    -translate-y-1/2 rounded-full z-10 bg-[rgba(52,168,83,1)]
+                    bg-[radial-gradient(circle,_rgba(52,168,83,1)_0%,_rgba(52,168,83,0.6)_40%,_transparent_90%)] 
+                    blur-3xl"
+        ></div>
+        <div
+          className="absolute bottom-4 right-20 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem rounded-full z-10 bg-[rgba(220,38,38,1)]
+                    bg-[radial-gradient(circle,_rgba(220,38,38,1)_0%,_rgba(220,38,38,0.6)_40%,_transparent_90%)] blur-3xl"
+        ></div>
         <Landing />
         <CountDownTimer />
         <div className="hidden md:flex items-center justify-center my-2 mx-auto">
@@ -28,7 +43,21 @@ export default function Home() {
       <div className="bg-foreground py-10">
         <AboutDevfestBamenda />
       </div>
-      <div className="bg-white py-5">
+      <div className="relative bg-white py-5">
+        <div
+          className="absolute top-4 right-20 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem] rounded-full z-10 bg-[rgba(66,133,244,1)]
+                      bg-[radial-gradient(circle,_rgba(66,133,244,1)_0%,_rgba(66,133,244,0.6)_0%,_transparent_90%)] blur-3xl"
+        ></div>
+        <div
+          className="absolute left-20 top-1/2 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem] 
+                    -translate-y-1/2 rounded-full z-10 bg-[rgba(52,168,83,1)]
+                    bg-[radial-gradient(circle,_rgba(52,168,83,1)_0%,_rgba(52,168,83,0.6)_40%,_transparent_90%)] 
+                    blur-3xl"
+        ></div>
+        <div
+          className="absolute bottom-4 right-20 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem rounded-full z-10 bg-[rgba(220,38,38,1)]
+                    bg-[radial-gradient(circle,_rgba(220,38,38,1)_0%,_rgba(220,38,38,0.6)_40%,_transparent_90%)] blur-3xl"
+        ></div>
         <Schedule />
       </div>
       <div className="relative bg-foreground">
@@ -55,7 +84,21 @@ export default function Home() {
         </div>
         <Tickets />
       </div>
-      <div className="bg-white py-5">
+      <div className="bg-white relative py-5">
+        <div
+          className="absolute top-4 right-20 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem] rounded-full z-10 bg-[rgba(66,133,244,1)]
+                      bg-[radial-gradient(circle,_rgba(66,133,244,1)_0%,_rgba(66,133,244,0.6)_0%,_transparent_90%)] blur-3xl"
+        ></div>
+        <div
+          className="absolute left-20 top-1/2 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem] 
+                    -translate-y-1/2 rounded-full z-10 bg-[rgba(52,168,83,1)]
+                    bg-[radial-gradient(circle,_rgba(52,168,83,1)_0%,_rgba(52,168,83,0.6)_40%,_transparent_90%)] 
+                    blur-3xl"
+        ></div>
+        <div
+          className="absolute bottom-4 right-20 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem rounded-full z-10 bg-[rgba(220,38,38,1)]
+                    bg-[radial-gradient(circle,_rgba(220,38,38,1)_0%,_rgba(220,38,38,0.6)_40%,_transparent_90%)] blur-3xl"
+        ></div>
         <Speakers speakers={speakers} />
       </div>
       <div className="relative bg-foreground">
@@ -84,7 +127,21 @@ export default function Home() {
           <Throwback />
         </div>
       </div>
-      <div className="bg-white py-5">
+      <div className="bg-white relative py-5">
+        <div
+          className="absolute top-4 right-20 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem] rounded-full z-10 bg-[rgba(66,133,244,1)]
+                      bg-[radial-gradient(circle,_rgba(66,133,244,1)_0%,_rgba(66,133,244,0.6)_0%,_transparent_90%)] blur-3xl"
+        ></div>
+        <div
+          className="absolute left-20 top-1/2 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem] 
+                    -translate-y-1/2 rounded-full z-10 bg-[rgba(52,168,83,1)]
+                    bg-[radial-gradient(circle,_rgba(52,168,83,1)_0%,_rgba(52,168,83,0.6)_40%,_transparent_90%)] 
+                    blur-3xl"
+        ></div>
+        <div
+          className="absolute bottom-4 right-20 h-[4rem] md:h-[6rem] w-[4rem] md:w-[6rem rounded-full z-10 bg-[rgba(220,38,38,1)]
+                    bg-[radial-gradient(circle,_rgba(220,38,38,1)_0%,_rgba(220,38,38,0.6)_40%,_transparent_90%)] blur-3xl"
+        ></div>
         <Location />
       </div>
       <div className="bg-[#1E1E1E] flex flex-col gap-5 py-5">
