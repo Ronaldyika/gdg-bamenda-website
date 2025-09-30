@@ -18,20 +18,20 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden bg-white">
        <Header />
-      <div className="flex justify-center items-center flex-col my-15 w-full">
+      <div id="home" className="flex justify-center items-center flex-col my-15 w-full">
         <Landing />
         <CountDownTimer />
         <div className="hidden md:flex items-center justify-center my-2 mx-auto">
             <img alt="landing-footer-image" width="1000" loading="lazy" decoding="async" style={{color: 'transparent'}} src="/gdg-assets/gdg-footer-img.svg"/>
         </div>
       </div>
-      <div className="bg-foreground py-10">
+      <div id="about" className="bg-foreground py-10">
         <AboutDevfestBamenda />
       </div>
-      <div className="bg-white py-5">
+      <div id="schedule" className="bg-white py-5">
         <Schedule />
       </div>
-      <div className="relative bg-foreground">
+      <div id="ticket" className="relative bg-foreground">
         <div className="absolute top-1 left-1">
           <img 
             className="h-[70px] md:h-[200px] lg:h-[237px]" 
@@ -55,10 +55,10 @@ export default function Home() {
         </div>
         <Tickets />
       </div>
-      <div className="bg-white py-5">
+      <div id="speakers" className="bg-white py-5">
         <Speakers speakers={speakers} />
       </div>
-      <div className="relative bg-foreground">
+      <div id="sponsors" className="relative bg-foreground">
         <div className="absolute top-1 left-1">
           <img 
             className="h-[70px] md:h-[200px] lg:h-[237px]" 
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
         <Sponsors />
       </div>
-      <div className="bg-white py-5">
+      <div id="team" className="bg-white py-5">
         <Organisers organizers={organizers} />
       </div>
       <div className="relative h-[400px] bg-[url('/images/throwback.png')] bg-cover bg-center">
@@ -84,7 +84,7 @@ export default function Home() {
           <Throwback />
         </div>
       </div>
-      <div className="bg-white py-5">
+      <div id="venue" className="bg-white py-5">
         <Location />
       </div>
       <div className="bg-[#1E1E1E] flex flex-col gap-5 py-5">
